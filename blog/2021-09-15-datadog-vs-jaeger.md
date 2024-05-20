@@ -1,7 +1,7 @@
 ---
 title: DataDog vs Jaeger - key features, differences and alternatives
 slug: datadog-vs-jaeger
-date: 2023-03-15
+date: 2024-05-16
 tags: [Tools Comparison, Jaeger]
 authors: ankit_anand
 description: DataDog is an enterprise-level monitoring and security tool. On the other hand, Jaeger is an open-source tool focused on end-to-end distributed tracing for microservice architecture. DataDog is a full-stack paid APM tool, whereas Jaeger is free and open-source..
@@ -60,6 +60,15 @@ A **trace context** is passed along when requests travel between services, which
 <figcaption><i>A trace context is passed when user requests pass from one service to another</i></figcaption>
     </figure>
 <br/>
+
+### Why do we need distributed tracing?
+
+Distributed tracing is essential for various reasons, here are some of them:
+
+- **Identification of root causes:** When issues occur, distributed tracing enables quick identification of the root cause by tracing the problem back through the chain of services and operations.
+- **Performance monitoring:** Distributed tracing helps in identifying bottlenecks in a request's lifecycle. This is important for optimizing the application's performance and improving user experience.
+- **Understand service interactions:** Distributed tracing maps how services communicate with each other. This visibility is crucial for managing dependencies and ensuring overall system health.
+- **Correlating Logs and Metrics:** Distributed tracing adds context to individual logs and metrics, enabling a holistic view of system behavior.
 
 ## Key Features of DataDog
 <a href = "https://www.datadoghq.com/" rel="noopener noreferrer nofollow" target="_blank" ><b>DataDog</b></a> offers an array of services in the monitoring domain. Some of the key areas in monitoring that it covers include:
